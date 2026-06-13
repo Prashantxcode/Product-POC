@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Product POC</title>
+
+    <link rel="stylesheet"
+          href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Product POC
+        </div>
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search products..."
+        >
+
+        <div class="nav-actions">
+
+            <div id="cart-wrapper">
+
+    <div id="cart-icon">
+        🛒 Cart (
+        <span id="cart-count">0</span>
+        )
+    </div>
+
+    <div id="cart-preview"></div>
+
+</div>
+
+            <div id="wishlist-icon">
+
+    ❤️ Wishlist (
+
+    <span id="wishlist-count">
+        0
+    </span>
+
+    )
+
+</div>
+
+        </div>
+
+    </header>
+
+    <!-- FILTERS -->
+
+    <div class="view-controls">
+
+        <button id="clear-filters-btn">
+            Clear Filters
+        </button>
+
+        <select id="category-filter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+        </select>
+
+        <select id="rating-filter">
+
+            <option value="0">
+                All Ratings
+            </option>
+
+            <option value="4">
+                4+ Rating
+            </option>
+
+            <option value="3">
+                3+ Rating
+            </option>
+
+            <option value="2">
+                2+ Rating
+            </option>
+
+            <option value="1">
+                1+ Rating
+            </option>
+
+        </select>
+
+        <select id="sort-select">
+
+            <option value="">
+                Sort By
+            </option>
+
+            <option value="low-high">
+                Price Low → High
+            </option>
+
+            <option value="high-low">
+                Price High → Low
+            </option>
+
+            <option value="rating">
+                Rating
+            </option>
+
+        </select>
+
+        <button id="grid-view-btn">
+            Grid View
+        </button>
+
+        <button id="list-view-btn">
+            List View
+        </button>
+
+    </div>
+
+    <!-- PRODUCT COUNT -->
+
+    <div id="product-count"></div>
+
+    <!-- CART PREVIEW -->
+
+    <!-- <div id="cart-preview"></div> -->
+
+    <!-- PRODUCTS -->
+
+    <div id="product-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
